@@ -8,8 +8,10 @@ namespace ConsoleApp1
 {
     internal class Program
     {
+        internal static Bases player = new Bases(0, 100);
         static void Main(string[] args)
         {
+
         }
     }
 }

@@ -8,7 +8,7 @@ namespace ConsoleApp1
 {
     internal class Units : life
     {
-        int _hp;
+        protected int _hp;
 
         internal Units(int hp)
         {
