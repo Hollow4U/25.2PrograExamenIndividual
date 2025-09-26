@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    internal class Bases
+    internal class Bases : life
     {
         int _resource;
         int _hp;
@@ -22,14 +22,14 @@ namespace ConsoleApp1
             _resource += 10;
         }
 
-        internal void LoseHP(int _loseHP)
-        {
+         public void LoseHP(int _loseHP)
+         {
             _hp -= _loseHP;
 
             if (-_hp <= 0)
             {
                 Console.WriteLine("End Game");
             }
-        }
-    }
+         }
+    } 
 }
