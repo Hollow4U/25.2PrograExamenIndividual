@@ -10,9 +10,10 @@ namespace ConsoleApp1
     internal class ResourceUnit : Units
     {
 
-        internal ResourceUnit(int hp) : base(hp)
+        internal ResourceUnit(int hp, bool ally) : base(hp, ally)
         {
             this._hp = hp;
+            this.ally = ally;
         }
 
         internal void Generate()

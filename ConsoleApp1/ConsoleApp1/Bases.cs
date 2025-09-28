@@ -8,8 +8,8 @@ namespace ConsoleApp1
 {
     internal class Bases : life
     {
-        int _resource;
-        int _hp;
+        internal int _resource;
+        internal int _hp;
 
         internal Bases(int resource, int hp)
         {
@@ -26,9 +26,10 @@ namespace ConsoleApp1
          {
             _hp -= _loseHP;
 
-            if (-_hp <= 0)
+            if (_hp <= 0)
             {
                 Console.WriteLine("End Game");
+                Environment.Exit(0);
             }
          }
     } 
