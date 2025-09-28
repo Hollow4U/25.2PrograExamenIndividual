@@ -19,9 +19,10 @@ namespace ConsoleApp1
         {
             _hp -= _loseHP;
 
-            if (-_hp <= 0)
+            if (_hp <= 0)
             {
                 Console.WriteLine("Eliminar de una lista de unidades");
+                Program.units.Remove(this);
             }
         }
     }
