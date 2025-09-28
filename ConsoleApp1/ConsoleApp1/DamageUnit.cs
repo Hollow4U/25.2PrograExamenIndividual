@@ -32,7 +32,7 @@ namespace ConsoleApp1
             }
             else
             {
-                Console.WriteLine($"{this} no encontró a quién atacar.");
+                Program.player.LoseHP(10);
             }
         }
     }
